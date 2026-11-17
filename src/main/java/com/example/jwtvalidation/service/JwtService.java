@@ -50,7 +50,7 @@ public class JwtService {
         Key key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
 
         return Jwts.builder()
-                .setSubject("Khyati,2400033157")
+                .setSubject("Khyati KVL,2400033157")
                 .claim("role", "ADMIN")
                 .signWith(key)
                 .compact();
